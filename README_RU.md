@@ -197,12 +197,13 @@ NB! Имя члена команды может содержать **пробе�
 Например:
 
 `const depthCalc = new DepthCalculator();`
+`const { calculateDepth } = depthCalc;`
 
-`depthCalc.calculateDepth([1, 2, 3, 4, 5])` => `1`
+`calculateDepth([1, 2, 3, 4, 5])` => `1`
 
-`depthCalc.calculateDepth([1, 2, 3, [4, 5]])` => `2`
+`calculateDepth([1, 2, 3, [4, 5]])` => `2`
 
-`depthCalc.calculateDepth([[[]]])` => `3`
+`calculateDepth([[[]]])` => `3`
 
 Напишите ваш код в `src/recursive-depth.js`.
 
